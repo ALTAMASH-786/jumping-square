@@ -41,7 +41,7 @@ function setup(){
     background("black");
     //create edgeSprite
    //createEdgeSprites();
-  bounceOff();
+ // bounceOff();
   isTouch();
 drawSprites();
   //add condition to check if box touching surface and make it bo }
@@ -64,6 +64,8 @@ function isTouch(){
 
   if(movingBox.isTouching(box1)){
     movingBox.shapeColor="lightgreen";
+      movingBox.velocityX= -(movingBox.velocityX)
+      movingBox.velocityY = -(movingBox.velocityY)
    } 
    if(movingBox.isTouching(box2)){
     movingBox.shapeColor="purple";
